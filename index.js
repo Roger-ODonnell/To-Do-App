@@ -15,10 +15,10 @@ function createMainWindow() {
   });
 
   // Load HTML file into the window
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile('./site/index.html');
 
   // Open DevTools (optional)
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Handle window close
   mainWindow.on('closed', () => {
