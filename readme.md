@@ -9,3 +9,5 @@ Electron-packager . To-Do-App --platform=win32 --arch=x64 --out=dist
 Initialize node modules:
 
 npm init -y
+
+Color Pallette by coolors.co

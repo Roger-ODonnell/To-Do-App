@@ -7,10 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, Electron!</h1>
-  <p>This is a simple Electron app using HTML, CSS, and JavaScript.</p>
-  <button id="myButton">Click me!</button>
+  <p>This is a simple To Do app using HTML, CSS, and JavaScript and Electron</p>
+
+  <div class="to-do-card">
+    <h1>To Do List</h1>
+    <ul class="to-do-list">
+      <li class="card-item"><button id="button">Do #1</button></li>
+      <!--Put strike through line on item once clicked on as complete-->
+    </ul>
+  </div>
 
   <script src="./JS/renderer.js"></script>
+  <script src="./JS/main.js"></script>
 </body>
 </html>

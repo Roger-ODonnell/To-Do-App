@@ -1,11 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+  background-color: #EDC79B;
+  color: rgb(26, 26, 26);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p{
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.to-do-card{
+  margin-top: 4rem;
+  background-color: #63A375;
+  width: 50%;
+  margin: 4rem auto;
+  padding: 2rem;
+  border: solid #CA6680 3px;
+}
+.to-do-card h1{
+  margin-bottom: 4rem;
+  color: rgb(255, 255, 255);
+}
+
+.to-do-list{
+  list-style-type: none;
+}
+button{
+  color: white;
+  background-color: #D57A66;
+  padding: 1rem;
+  width: 100%;
+  font-size: 20px;
+}
