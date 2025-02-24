@@ -1,7 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-document.getElementById("button").addEventListener("click", () => {
-    document.getElementById("button").style.textDecoration = "line-through";
+  function addListener() {
+    document.querySelectorAll(".item").forEach(button => {
+      button.addEventListener("click", function () {
+        this.style.textDecoration = "line-through";
+        this.style.color = "red";
+      });
+    });
+  }
+
+  addListener(); // Add event listeners to existing items
+
+  document.getElementById("new-item").addEventListener("click", () => {
+    let itemText = prompt("Enter your item", "");
+    
+    if (itemText) { // Ensure input isn't empty
+      document.getElementById("list").insertAdjacentHTML("afterbegin", `<li class="card-item"><button class="item">${itemText}</button></li>`);
+      addListener(); // Reapply event listeners to new items
+    }
   });
 });
 
-// Create page to display form to submit items for list, add to array, display items once done is clicked, add reset button
+document.getElementById("clear-list").addEventListener("click", function () {
+  clearList();
+});
+
+function clearList() {
+  document.getElementById("list").innerHTML = "";
+}
