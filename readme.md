@@ -11,3 +11,5 @@ Initialize node modules:
 npm init -y
 
 Color Pallette by coolors.co
+
+Favicon by icons8.com
