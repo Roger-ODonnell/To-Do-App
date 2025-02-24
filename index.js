@@ -1,5 +1,6 @@
 // Import Electron modules
 const { app, BrowserWindow } = require('electron');
+const { url } = require('inspector');
 const path = require('path');
 
 let mainWindow;

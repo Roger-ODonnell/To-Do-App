@@ -4,7 +4,7 @@ https://medium.com/@sudipb001/how-to-create-a-desktop-app-using-javascript-and-e
 
 Build out app:
 
-Electron-packager . To-Do-App --platform=win32 --arch=x64 --out=dist
+Electron-packager . To-Do-App --platform=win32 --arch=x64 --out=dist --overwrite
 
 Initialize node modules:
 
